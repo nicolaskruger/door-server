@@ -1,7 +1,6 @@
 import express from 'express';
 
-const port = 3333;
-
+const port = process.env.PORT || 5000;
 
 const doorState = ['open', 'close'] as const;
 type DoorState = typeof doorState[number];
